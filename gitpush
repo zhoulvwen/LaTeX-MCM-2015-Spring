@@ -1,0 +1,2 @@
+git push -u origin master --tags
+git push -u gitcafe master --tags
