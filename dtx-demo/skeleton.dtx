@@ -1,0 +1,50 @@
+% \iffalse meta-comment
+%<*internal>
+\iffalse
+%</internal>
+%<*readme>
+readme
+%</readme>
+%<*internal>
+\fi
+\begingroup
+  \def\nameoflatexe{LaTeX2e}
+\expandafter\endgroup\ifx\nameoflatexe\fmtname\else
+\csname fi\endcsname
+%</internal>
+%<*install>
+\input docstrip.tex
+\keepsilent
+\generate{
+  \usedir{tex/latex/\jobname}
+  \file{\jobname.cls}{\from{\jobname.dtx}{class}}
+  \nopreamble\nopostamble
+  \file{README.txt}{\from{\jobname.dtx}{readme}}}
+\Msg{* Happy TeXing!}
+\endbatchfile
+%</install>
+%<*internal>
+\fi
+%</internal>
+%<*driver>
+\ProvidesFile{skeleton.dtx}[2015/01/20 v1.0 A Skeleton File]
+\documentclass{ltxdoc}
+\begin{document}
+  \DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+% \CheckSum{0}
+% \GetFileInfo{\jobname.dtx}
+% \DoNotIndex{\test}
+% \StopEventually{}
+% \section{Implementation}
+%    \begin{macrocode}
+%<*class>
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesClass{skeleton}[2015/01/20 v1.0 A Skeleton File]
+%</class>
+%<class>\endinput
+%    \end{macrocode}
+% \Finale
+\endinput

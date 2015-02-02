@@ -97,7 +97,7 @@
       \begin{itemize}
         \item TEXMF 可以有多个，相互独立
         \item 优先级 \\
-          TEXMFLOCAL (texmf-local) $ > $ TEXMFDIST (texmf-dist)
+          当前目录 $ > $ TEXMFLOCAL (texmf-local) $ > $ TEXMFDIST (texmf-dist)
       \end{itemize}\pause
     \item ls-R 数据库
       \begin{itemize}
@@ -133,9 +133,12 @@
 
 \begin{frame}{手工安装}
   \begin{itemize}
-    \item TDS 安装包\pause
-    \item 处理 \file{.ins} 文件\pause
-    \item 处理 \file{.dtx} 文件\footnote{参考：\url{http://www.zhihu.com/question/27693438/answer/37669407}、\\\qquad\url{http://liam0205.me/2015/01/23/literate-programming-in-latex/}}
+    \item TDS 安装包\\
+    \url{http://www.ctan.org/pkg/sduthesis} - sduthesis.tds\pause
+    \item 处理 \file{.ins} 文件\\
+    \url{http://www.ctan.org/pkg/achemso} - ins-demo\pause
+    \item 处理 \file{.dtx} 文件\footnote{参考：\url{http://www.zhihu.com/question/27693438/answer/37669407}、\\\qquad\url{http://liam0205.me/2015/01/23/literate-programming-in-latex/}}\\
+    skeleton - dtx-demo
   \end{itemize}
 \end{frame}
 
